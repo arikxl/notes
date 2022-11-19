@@ -47,7 +47,7 @@ function App() {
      setNotes(prevNotes => {
       return [ ...prevNotes,
          { ...data, id: uuidV4(),
-        tags.map(tag => tag.id) },
+        tagIds: tags.map(tag => tag.id) },
         ]
      })
   }
